@@ -1,19 +1,27 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     background-color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     height: 100vh;
     margin: 0;
+    overflow: hidden; 
 }
+
 .image-section {
-    width: 500px; 
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+    margin-left: 25vw;
+    margin-right: 25vw;
     border: 1px solid #000;
 }
+
 .image-section img {
     width: 100%;
     display: block;
 }
+
 .gradient-btn {
     width: 100%;
     padding: 15px 0;
@@ -23,4 +31,8 @@ body {
     font-size: 18px;
     font-weight: bold;
     cursor: pointer;
+}
+
+.gradient-btn:hover {
+    opacity: 0.9;
 }
