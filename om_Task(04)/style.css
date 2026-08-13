@@ -1,0 +1,26 @@
+body {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+.image-section {
+    width: 500px; 
+    border: 1px solid #000;
+}
+.image-section img {
+    width: 100%;
+    display: block;
+}
+.gradient-btn {
+    width: 100%;
+    padding: 15px 0;
+    border: none;
+    background: linear-gradient(to right, #ffbb00, #4cd137);
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+}
