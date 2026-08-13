@@ -1,0 +1,29 @@
+body {
+    background-color: rgb(147, 88, 0);
+}
+
+.head {
+    color: darkblue;
+}
+
+#bglime {
+    background-color: lime;
+}
+
+h2.head {
+    color: red;
+}
+
+p {
+    color: white;
+}
+
+#para {
+    color: black;
+    font-size: 24px;
+}
+
+p:last-child a {
+    color: red;
+    text-decoration: underline;
+}
