@@ -6,19 +6,22 @@
 
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background-color: #ffffff;
+    background-color: white;
     color: #465f73;
 }
 
 .navbar {
-    height: 70px;
     width: 100%;
+    height: 70px;
+
     display: flex;
     align-items: center;
     justify-content: space-between;
+
     padding: 0 40px;
-    border-bottom: 1px solid #eeeeee;
+
     background-color: white;
+    border-bottom: 1px solid #eeeeee;
 }
 
 .logo {
@@ -38,62 +41,100 @@ body {
     font-size: 16px;
 }
 
+.desktop-menu a:hover {
+    color: #079ff0;
+}
+
 .right-section {
     display: flex;
     align-items: center;
     gap: 20px;
+    position: relative;
 }
+
 
 .username {
     border: none;
     background-color: #e7f6ff;
     color: #16a8f5;
+
     padding: 12px 18px;
     border-radius: 15px;
+
     cursor: pointer;
 }
 
 .hamburger {
     display: none;
+
     width: 40px;
     height: 40px;
+
+    padding: 8px;
+
     border: none;
     background: transparent;
+
     cursor: pointer;
-    padding: 8px;
 }
 
 .hamburger span {
     display: block;
+
     width: 20px;
     height: 3px;
+
     margin: 4px auto;
+
     background-color: #465f73;
     border-radius: 2px;
 }
 
 .menu-list {
-    display: none;
-
     position: absolute;
-    top: 70px;
+
+    top: 50px;
     right: 0;
 
     width: 220px;
     min-height: calc(100vh - 70px);
 
+    padding-top: 100px;
+
     background-color: #000000;
 
-    padding-top: 250px;
-
     z-index: 100;
+
+    opacity: 0;
+    visibility: hidden;
+
+    transform: translateX(100%);
+
+    transition:
+        transform 0.3s ease,
+        opacity 0.3s ease,
+        visibility 0.3s ease;
 }
+
+.hamburger:focus + .menu-list {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(0);
+}
+
+.menu-list:focus-within {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(0);
+}
+
 
 .menu-list a {
     display: block;
-    text-align: center;
 
     padding: 18px 10px;
+
+    text-align: center;
 
     color: white;
     text-decoration: none;
@@ -122,13 +163,16 @@ body {
 
 .hero p {
     margin-top: 10px;
+
     max-width: 600px;
+
     color: #8b9aaa;
     line-height: 1.6;
 }
 
 .cta {
     margin-top: 25px;
+
     padding: 16px 40px;
 
     border: none;
@@ -139,7 +183,12 @@ body {
 
     font-size: 16px;
     font-weight: bold;
+
     cursor: pointer;
+}
+
+.cta:hover {
+    background-color: #079ff0;
 }
 
 @media screen and (max-width: 768px) {
@@ -158,10 +207,6 @@ body {
     }
 
     .hamburger {
-        display: block;
-    }
-
-    .hamburger:focus + .menu-list {
         display: block;
     }
 
