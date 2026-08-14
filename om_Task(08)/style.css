@@ -1,0 +1,195 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #ffffff;
+    color: #465f73;
+}
+
+.navbar {
+    height: 70px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 40px;
+    border-bottom: 1px solid #eeeeee;
+    background-color: white;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+    color: #465f73;
+}
+
+.desktop-menu {
+    display: flex;
+    gap: 30px;
+}
+
+.desktop-menu a {
+    text-decoration: none;
+    color: #465f73;
+    font-size: 16px;
+}
+
+.right-section {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.username {
+    border: none;
+    background-color: #e7f6ff;
+    color: #16a8f5;
+    padding: 12px 18px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.hamburger {
+    display: none;
+    width: 40px;
+    height: 40px;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    padding: 8px;
+}
+
+.hamburger span {
+    display: block;
+    width: 20px;
+    height: 3px;
+    margin: 4px auto;
+    background-color: #465f73;
+    border-radius: 2px;
+}
+
+.menu-list {
+    display: none;
+
+    position: absolute;
+    top: 70px;
+    right: 0;
+
+    width: 220px;
+    min-height: calc(100vh - 70px);
+
+    background-color: #000000;
+
+    padding-top: 250px;
+
+    z-index: 100;
+}
+
+.menu-list a {
+    display: block;
+    text-align: center;
+
+    padding: 18px 10px;
+
+    color: white;
+    text-decoration: none;
+
+    font-size: 18px;
+}
+
+.menu-list a:hover {
+    background-color: #222222;
+}
+
+.hero {
+    max-width: 700px;
+    padding: 70px 40px;
+}
+
+.hero h1 {
+    font-size: 42px;
+    line-height: 1.15;
+    color: #465f73;
+}
+
+.hero h1 span {
+    color: #079ff0;
+}
+
+.hero p {
+    margin-top: 10px;
+    max-width: 600px;
+    color: #8b9aaa;
+    line-height: 1.6;
+}
+
+.cta {
+    margin-top: 25px;
+    padding: 16px 40px;
+
+    border: none;
+    border-radius: 30px;
+
+    background-color: #13a8f5;
+    color: white;
+
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+
+    .navbar {
+        height: 70px;
+        padding: 0 20px;
+    }
+
+    .desktop-menu {
+        display: none;
+    }
+
+    .right-section {
+        gap: 10px;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .hamburger:focus + .menu-list {
+        display: block;
+    }
+
+    .hero {
+        padding: 30px 20px;
+    }
+
+    .hero h1 {
+        font-size: 30px;
+    }
+
+    .hero p {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+
+    .username {
+        padding: 10px 12px;
+        font-size: 13px;
+    }
+
+    .logo {
+        font-size: 25px;
+    }
+
+    .menu-list {
+        width: 220px;
+    }
+}
