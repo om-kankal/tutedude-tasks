@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Project Workspace</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="min-h-screen bg-white text-slate-900">
+  <!-- Sticky Navbar -->
+  <header class="sticky top-0 z-50 border-b border-slate-200 bg-white/90 backdrop-blur-md">
+    <nav class="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
+      <a href="#" class="text-base font-semibold tracking-tight">
+        ✦ Project
+      </a>
+
+      <div class="hidden items-center gap-7 text-sm text-slate-600 md:flex">
+        <a href="#product" class="hover:text-slate-950">Product</a>
+        <a href="#solutions" class="hover:text-slate-950">Solutions</a>
+        <a href="#resources" class="hover:text-slate-950">Resources</a>
+        <a href="#pricing" class="hover:text-slate-950">Pricing</a>
+        <a href="#login" class="hover:text-slate-950">Log in</a>
+        <a href="#cta" class="rounded-md bg-slate-950 px-4 py-2 text-sm font-medium text-white transition hover:bg-slate-800">
+          Get AI free
+        </a>
+      </div>
+
+      <button
+        id="menuButton"
+        type="button"
+        class="rounded-md border border-slate-300 px-3 py-2 text-sm md:hidden"
+        aria-label="Open navigation"
+      >
+        Menu
+      </button>
+    </nav>
+
+    <div id="mobileMenu" class="hidden border-t border-slate-200 bg-white px-6 py-4 md:hidden">
+      <div class="grid gap-3 text-sm text-slate-600">
+        <a href="#product">Product</a>
+        <a href="#solutions">Solutions</a>
+        <a href="#resources">Resources</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#login">Log in</a>
+        <a href="#cta" class="font-medium text-slate-950">Get AI free</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section id="cta" class="bg-gradient-to-b from-orange-50 via-orange-50/70 to-white">
+      <div class="mx-auto max-w-7xl px-6 pb-24 pt-20 text-center sm:pt-24">
+        <div class="mx-auto max-w-4xl">
+          <p class="mb-4 text-xs font-medium uppercase tracking-[0.24em] text-slate-500">
+            AI workspace for modern teams
+          </p>
+
+          <h1 class="text-5xl font-semibold leading-[0.98] tracking-[-0.04em] sm:text-6xl lg:text-7xl">
+            Write, plan, share.
+            <span class="block">With AI at your side.</span>
+          </h1>
+
+          <p class="mx-auto mt-6 max-w-2xl text-base leading-7 text-slate-500 sm:text-lg">
+            A focused workspace for writing, planning and collaboration.
+            Keep your team's ideas together and use AI to move from notes to action.
+          </p>
+
+          <div class="relative z-10 mt-8 flex flex-col items-center justify-center gap-3 sm:flex-row">
+            <a
+              href="#product"
+              class="rounded-md bg-slate-950 px-6 py-3 text-sm font-medium text-white shadow-sm transition hover:bg-slate-800"
+            >
+              Get AI free
+            </a>
+            <a
+              href="#resources"
+              class="rounded-md border border-slate-300 bg-white px-6 py-3 text-sm font-medium text-slate-700 transition hover:bg-slate-50"
+            >
+              Request a demo
+            </a>
+          </div>
+
+          <!-- Dashboard Preview Parent: relative -->
+          <div id="product" class="relative mx-auto mt-16 max-w-4xl">
+            <!-- Dashboard Preview -->
+            <div class="relative z-0 overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-2xl shadow-slate-200/80">
+              <img
+                src="assets/dashboard.svg"
+                alt="Project dashboard preview"
+                class="block w-full"
+              >
+            </div>
+
+            <!-- Floating Card 1 -->
+            <div class="absolute -left-10 top-20 z-20 hidden w-44 rounded-xl border border-slate-200 bg-white p-4 text-left shadow-xl sm:block">
+              <div class="flex items-center gap-2">
+                <div class="flex h-7 w-7 items-center justify-center rounded-md bg-orange-50 text-sm">✓</div>
+                <span class="text-xs font-semibold text-slate-800">Tasks</span>
+              </div>
+              <p class="mt-3 text-sm leading-5 text-slate-600">
+                12 tasks completed today
+              </p>
+            </div>
+
+            <!-- Floating Card 2 -->
+            <div class="absolute -right-10 top-24 z-20 hidden w-44 rounded-xl border border-emerald-200 bg-white p-4 text-left shadow-xl sm:block">
+              <div class="flex items-center gap-2">
+                <div class="flex h-7 w-7 items-center justify-center rounded-md bg-emerald-50 text-sm text-emerald-700">✓</div>
+                <span class="text-xs font-semibold text-slate-800">Project Status</span>
+              </div>
+              <p class="mt-3 text-sm font-medium text-emerald-700">
+                On Track
+              </p>
+            </div>
+
+            <!-- Floating Card 3 -->
+            <div class="absolute -bottom-6 right-16 z-20 hidden w-48 rounded-xl border border-slate-200 bg-white p-4 text-left shadow-xl sm:block">
+              <div class="flex -space-x-2">
+                <div class="flex h-7 w-7 items-center justify-center rounded-full border-2 border-white bg-slate-800 text-[10px] text-white">A</div>
+                <div class="flex h-7 w-7 items-center justify-center rounded-full border-2 border-white bg-slate-500 text-[10px] text-white">S</div>
+                <div class="flex h-7 w-7 items-center justify-center rounded-full border-2 border-white bg-indigo-500 text-[10px] text-white">K</div>
+              </div>
+              <p class="mt-2 text-sm text-slate-600">+5 online</p>
+              <p class="mt-1 text-xs text-slate-400">Team Activity</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Small supporting sections -->
+    <section id="solutions" class="border-t border-slate-100 bg-white py-16">
+      <div class="mx-auto grid max-w-7xl gap-6 px-6 md:grid-cols-3">
+        <div class="rounded-xl border border-slate-200 p-6">
+          <h2 class="text-lg font-semibold">Write</h2>
+          <p class="mt-2 text-sm leading-6 text-slate-500">
+            Keep docs, notes and ideas together in one place.
+          </p>
+        </div>
+        <div class="rounded-xl border border-slate-200 p-6">
+          <h2 class="text-lg font-semibold">Plan</h2>
+          <p class="mt-2 text-sm leading-6 text-slate-500">
+            Turn projects into clear tasks and simple progress views.
+          </p>
+        </div>
+        <div class="rounded-xl border border-slate-200 p-6">
+          <h2 class="text-lg font-semibold">Share</h2>
+          <p class="mt-2 text-sm leading-6 text-slate-500">
+            Give every teammate a clear place to collaborate.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="resources" class="bg-slate-50 py-20">
+      <div class="mx-auto max-w-4xl px-6 text-center">
+        <p class="text-xs uppercase tracking-[0.2em] text-slate-400">Resources</p>
+        <h2 class="mt-3 text-3xl font-semibold">Everything your team needs to keep moving.</h2>
+      </div>
+    </section>
+
+    <section id="pricing" class="bg-white py-20">
+      <div class="mx-auto max-w-4xl px-6 text-center">
+        <h2 class="text-3xl font-semibold">Start simple. Grow with your team.</h2>
+        <p class="mt-3 text-slate-500">Use the workspace free and upgrade when you need more.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer id="login" class="border-t border-slate-200 bg-white py-8 text-center text-sm text-slate-500">
+    Project Workspace · Tailwind CSS demo
+  </footer>
+
+  <!-- Fixed Chat Widget -->
+  <button
+    type="button"
+    class="fixed bottom-6 right-6 z-50 flex h-12 w-12 items-center justify-center rounded-full bg-slate-950 text-lg text-white shadow-xl transition hover:scale-105 hover:bg-slate-800"
+    aria-label="Open chat"
+  >
+    💬
+  </button>
+
+  <script>
+    const menuButton = document.getElementById("menuButton");
+    const mobileMenu = document.getElementById("mobileMenu");
+
+    menuButton.addEventListener("click", () => {
+      mobileMenu.classList.toggle("hidden");
+    });
+
+    mobileMenu.querySelectorAll("a").forEach((link) => {
+      link.addEventListener("click", () => {
+        mobileMenu.classList.add("hidden");
+      });
+    });
+  </script>
+</body>
+</html>
