@@ -1,0 +1,41 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+h2 {
+    margin-top: 15px;
+    font-weight: normal;
+}
+
+.boxes {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    gap: 18px;
+}
+
+.box {
+    width: 65px;
+    height: 48px;
+    background-color: white;
+    border: 1px solid #ddd;
+    cursor: pointer;
+    color: black;
+}
+
+.greeting {
+    margin-top: 60px;
+}
+
+.greeting input {
+    width: 130px;
+    height: 25px;
+    padding-left: 5px;
+}
+
+.greeting button {
+    height: 30px;
+    cursor: pointer;
+}

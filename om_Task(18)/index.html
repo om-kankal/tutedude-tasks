@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Interactive Greeting</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h2 id="heading">Hello</h2>
+    <div class="boxes">
+        <button class="box" onclick="changeColor(this)">Red</button>
+        <button class="box" onclick="changeColor(this)">Blue</button>
+        <button class="box" onclick="changeColor(this)">Green</button>
+        <button class="box" onclick="changeColor(this)">Yellow</button>
+    </div>
+    <div class="greeting">
+        <input type="text" id="name" placeholder="Enter your name">
+        <button onclick="greetUser()">Greet</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

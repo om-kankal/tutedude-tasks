@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Service Booking</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div class="logo">Logo</div>
+        <div class="nav-links">
+            <a href="#">Home</a>
+            <a href="#">Services</a>
+            <a href="#">Contact Us</a>
+            <a href="#">About Us</a>
+        </div>
+        <div class="user-area">
+            <span>Username</span>
+            <button class="logout">↪</button>
+        </div>
+    </nav>
+    <main>
+        <section class="left-section">
+            <div class="added-items">
+                <h3>Added Items</h3>
+                <div class="table-heading">
+                    <span>S.No</span>
+                    <span>Service Name</span>
+                    <span>Price</span>
+                </div>
+                <div id="items-list">
+                    <div class="empty-items">
+                        <div class="info-icon">i</div>
+                        <h4>No Items Added</h4>
+                        <p>Add items from the services box</p>
+                    </div>
+                </div>
+                <div class="total">
+                    <span>Total Amount</span>
+                    <strong id="total">₹ 0</strong>
+                </div>
+            </div>
+            <div class="booking-form">
+                <h3>Book Now</h3>
+                <label>Full Name</label>
+                <input type="text" id="name" placeholder="Your Name">
+                <div class="form-row">
+                    <div>
+                        <label>Email ID</label>
+                        <input type="email" id="email" placeholder="example@email.com">
+                    </div>
+                    <div>
+                        <label>Phone Number</label>
+                        <input type="text" id="phone" placeholder="0000000000">
+                    </div>
+                </div>
+                <button id="book-now" type="button">Book Now</button>
+                <div class="bottom-text" id="booking-message" role="status" hidden>
+                        ⓘ Add the items to the cart to book
+                </div>
+            </div>
+        </section>
+        <section class="right-section">
+            <h2>Browse Our Services</h2>
+            <p class="description"> Click on the add to cart button to add the services to your cart press skip.</p>
+            <hr>
+            <div class="service-box">
+                <img id="service-image" src="dry-cleaning.jpg" alt="Service Image">
+                <h2 id="service-name">Dry Cleaning</h2>
+                <h3 id="service-price">₹200.00</h3>
+                <div class="service-buttons">
+                    <button id="skip-btn">Skip Item ⊖</button>
+                    <button id="add-btn">Add Item ⊕ </button>
+                </div>
+            </div>
+            <div class="service-hint">ⓘ Add the items to the cart and book now</div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
