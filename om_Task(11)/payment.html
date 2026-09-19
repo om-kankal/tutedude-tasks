@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout - Thala 7</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="layout-container">
+        <div class="left-box">
+            <h3>Checkout</h3>
+            <br>
+            <h4>Contact Details</h4>
+            <div class="form-group">
+                <label>Email ID</label>
+                <input type="email">
+            </div>
+            <h4>Payment</h4>
+            <div class="payment-tabs">
+                <button class="tab active">💳 Card</button>
+                <button class="tab">₿ Crypto</button>
+                <button class="tab">🏦 Bank</button>
+                <button class="tab">...</button>
+            </div>
+            <div class="form-group">
+                <label>Card Number</label>
+                <input type="text">
+            </div>
+            <div class="form-row">
+                <div class="form-group">
+                    <label>Expiry</label>
+                    <input type="text" placeholder="MM/YY">
+                </div>
+                <div class="form-group">
+                    <label>CVC</label>
+                    <input type="text" placeholder="***">
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group">
+                    <label>Country</label>
+                    <select>
+                        <option>India</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>ZIP</label>
+                    <input type="text" placeholder="XXXXX">
+                </div>
+            </div>
+        </div>
+        <div class="right-box">
+            <h2 class="center-title">Order Summary</h2>
+            <div class="summary-card">
+                <label for="coupon">Enter Coupon Code</label>
+                <div class="coupon-group">
+                    <input type="text" id="coupon" placeholder="COUPON CODE">
+                    <button class="btn-blue">Apply Coupon</button>
+                </div>
+                <div class="summary-rows">
+                    <div class="row"><span>Sub Total</span> <span>₹4,700</span></div>
+                    <div class="row"><span>Taxes (if applicable)</span> <span>₹199</span></div>
+                    <div class="row"><span>Discount</span> <span>₹0</span></div>
+                    <hr>
+                    <div class="row total"><span>Total</span> <span>₹4,999</span></div>
+                </div>
+                <button class="btn-orange">Pay Now ₹4,999</button>
+                <div class="trust-icons">
+                    <span>🛡️ Secure</span>
+                    <span><strong>Razorpay</strong></span>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
