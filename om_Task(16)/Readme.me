@@ -1,0 +1,10 @@
+# JS Map Filter Exercise Task
+
+I created this project to display and search student records using JavaScript `map` and `filter` functions.
+
+## What I Did for thi assignmet
+- Created `index.html`, `style.css`, and `script.js` files in my folder.
+- In `script.js` I made an array containing 20 student objects with name, marks, class, and address.
+- I wrote `displayStudents` function using `.map()` to see student records into HTML cards.
+- I wrote `filterStudents` function using `.filter()` to filter student names.
+- Added input event listener to search box for real-time filtering as user types, as well as on button click.
