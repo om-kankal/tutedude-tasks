@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Node Web Server - Home</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <header class="nav">
+    <div class="logo">NodeSite</div>
+    <nav>
+      <a href="/">Home</a>
+      <a href="/about">About</a>
+      <a href="/contact">Contact</a>
+    </nav>
+  </header>
+
+  <main class="hero">
+    <div class="badge">Task 31 · Node.js</div>
+    <h1>Simple web server, clear routes.</h1>
+    <p>
+      This page is served by a Node.js HTTP server. Use the navigation to
+      visit the other routes.
+    </p>
+
+    <div class="cards">
+      <a class="card" href="/about">
+        <span>01</span>
+        <h2>About</h2>
+        <p>Learn what this small server demonstrates.</p>
+      </a>
+      <a class="card" href="/contact">
+        <span>02</span>
+        <h2>Contact</h2>
+        <p>Open the contact route and view another HTML page.</p>
+      </a>
+      <div class="card">
+        <span>03</span>
+        <h2>404 Ready</h2>
+        <p>Unknown paths receive a custom 404 response.</p>
+      </div>
+    </div>
+  </main>
+
+  <footer>Built with Node.js http module</footer>
+</body>
+</html>
